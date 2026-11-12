@@ -323,7 +323,7 @@ if __name__ == "__main__":
                                       phase=0.0, lowpass_window=w)
 
     print(f"len(demod) = {len(demod)}, len(signal) = {n}")
-
+    print('')
     dc_out = float(np.mean(demod))
     std_out = float(np.std(demod))
     n_eff = max(1.0, n / w)
